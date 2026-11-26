@@ -1,0 +1,75 @@
+name: "Spike"
+description: "Time-boxed technical investigation to reduce uncertainty or evaluate feasibility"
+title: "[Spike] "
+type: Spike
+projects:
+  - "remiboivin021/1"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Technical Spike
+
+        Use this form for **short, time-boxed investigations** aimed at answering a specific technical question, exploratory work, technical spikes or feasibility studies.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Core Question / Goal
+      description: |
+        What specific technical question must this spike answer?
+      placeholder: |
+        Can QLoRA fine-tuning on Qwen2.5-Coder-7B fit within 24GB VRAM with a context length of 4096?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context & Motivation
+      description: |
+        Why do we need to answer this now? What decision or task is blocked by this uncertainty?
+    validations:
+      required: true
+
+  - type: textarea
+    id: approach
+    attributes:
+      label: Investigation Approach
+      description: |
+        How will you test or explore this? (e.g., throwaway prototype, small benchmark, reading source code).
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Expected Output / Deliverable
+      description: |
+        What artifact will be produced at the end of the timebox?
+      placeholder: |
+        - Summary comment with findings and recommendation
+        - Link to throwaway branch / notebook / benchmark metrics
+        - Follow-up implementation issues if validated
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of Scope
+      description: |
+        What are we explicitly NOT doing during this spike (e.g., production-ready code, full test coverage)?
+      placeholder: |
+        Clean architecture, CI integration, edge-case handling
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References & Links
+      description: |
+        Related issues, documentation, papers, or repositories.
+    validations:
+      required: false

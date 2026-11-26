@@ -1,0 +1,92 @@
+name: "Task"
+description: "Track setup, configuration, data operations, maintenance or release work"
+title: "[Task] "
+type: Task
+
+projects:
+  - "remiboivin021/1"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Task
+
+        Use this form for **concrete work with a known outcome** that is not a new feature:
+        environment setup, configuration, data operations, tooling, refactoring, dependency updates or release work.
+        Use **Feature Request** for new capabilities, **Spike** for open technical questions and **Documentation** for docs.
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: |
+        State what must be done and the result expected when the task is complete.
+      placeholder: |
+        Set up a reproducible Kaggle notebook that installs [...] so that [...]
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: |
+        Explain why this task is needed now. Link the parent issue and milestone if any.
+      placeholder: |
+        Part of #123. Required before [...]
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps
+      description: |
+        List the concrete steps to complete the task.
+      placeholder: |
+        - [ ] Step 1
+        - [ ] Step 2
+        - [ ] Step 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: |
+        Define objective, verifiable criteria for completion.
+      placeholder: |
+        - Given ..., when ..., then ...
+        - The task is complete when ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: |
+        Issues, tools, accounts, datasets or credentials required.
+      placeholder: |
+        Depends on #123, Kaggle account, Hugging Face token
+    validations:
+      required: false
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of Scope
+      description: |
+        State what this task does not cover.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: |
+        Links, logs, screenshots, or related discussions.
+    validations:
+      required: false

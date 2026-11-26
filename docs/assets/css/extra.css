@@ -1,0 +1,8 @@
+/* Distinguish Diátaxis quadrants by accent color */
+.md-nav__item--section > .md-nav__link[for="__toc"] { font-weight: 600; }
+
+/* Optional: subtle left border per quadrant */
+.md-content h1 { border-bottom: 2px solid var(--md-primary-fg-color); padding-bottom: .3rem; }
+
+/* Code blocks: slightly tighter line height for Rust snippets */
+.highlight pre { line-height: 1.4; }
